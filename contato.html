@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>O Motor</title>
+
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        <header>
+            <div class="caixa">
+                <h1><a href="index.html"><img src="imagens/logo.png" alt="Logo do site" class="logo"></h1></a>
+                <nav>
+                    <ul>
+                        <li><a href="motos.html">Motos</a></li>
+                        <li><a href="pecas.html">Peças</a></li>
+                        <li><a href="produtos.html">Produtos</a></li>
+                        <li><a href="index.html">Principal</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main class="formulario">
+            <form>
+                <fieldset>
+                    <legend>Informações Pessoais</legend>
+
+                    <img src="imagens/wallpaperContato.jpg">
+
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" class="inputTexto" placeholder="Ex: João" required>
+
+                    <label for="sobrenome">Sobrenome:</label>
+                    <input type="text" id="sobrenome" class="inputTexto" placeholder="Ex: Pereira" required>
+
+                   
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" class="inputTexto" placeholder="Ex: joaopereira@dominio.com" required>
+
+                    <label for="celular">Celular:</label>
+                    <input type="tel" id="celular" class="inputTexto" placeholder="(XX) XXXXX-XXX">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Selecione o assunto da mensagem:</legend>
+                        <select>
+                            <option>Motos</option>
+                            <option>Peças</option>
+                            <option>Produtos</option>
+                            <option>Dúvida</option>
+                            <option>Reclamação</option>
+                            <option>Outro Assunto</option>
+                        </select>
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea cols="70" rows="10" id="mensagem" class="inputTexto" placeholder="Digite sua mensagem da forma mais informátiva possível." required></textarea>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Como prefere o nosso contato?</legend>
+                    <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email">
+                    E-mail</label>
+                    
+                    <label for="radio-celular"><input type="radio" name="contato" value="celular" id="radio-celular">Celular</label>
+
+                    <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsApp" id="radio-whatsapp" checked>WhatstApp</label>
+                </fieldset>
+
+                <label><input type="checkbox">Gostaria de receber ofertas de produtos e serviços por E-mail?</label>
+
+                <label><input type="checkbox" required>Concorda em enviar seus dados para nós?</label>
+
+                <input type="submit" value="Enviar Mensagem" class="botaoMensagem">
+            </form>
+        </main>
+
+        <footer>
+            <div class="conteudo-rodape">
+                <a href="index.html"><img src="imagens/logo.png" alt="Logo do site" class="logo"></a>
+            </div>
+        </footer>
+    </body>
+</html>

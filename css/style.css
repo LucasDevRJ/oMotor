@@ -1,0 +1,622 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+header {
+    background: #FF914D;
+    padding: 20px 0;
+}
+
+.caixa {
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.logo {
+    height: 200px;
+    cursor: pointer;
+}
+
+nav {
+    position: absolute;
+    top: 150px;
+    right: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+    font-weight: lighter;
+}
+
+nav li {
+    text-transform: uppercase;
+}
+
+nav a {
+    color: #000000;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #FFFFFF;
+    text-decoration: line-through;
+}
+
+.banner {
+    height: 700px;
+    width: 100%;
+}
+
+.sobre {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.imagem-sobre {
+    margin: 30px 160px;
+    width: 640px;
+}
+
+.imagem-sobre:hover {
+    opacity: 1;
+    border: 1mm ridge #FF914D;
+    border-radius: 5px;
+}
+
+.titulo {
+    text-align: center;
+    margin: 30px 0;
+    font-weight: bold;
+}
+
+.beneficios {
+    width: 940px;
+    margin: 0 auto;
+    padding: 0 0 0 10px;
+}
+
+.conteudo-beneficios {
+    width: 977px;
+    margin: 0 auto;
+}
+
+.lista-beneficios {
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.imagem-beneficios {
+    width: 56%;
+    opacity: 0.8;
+}
+
+.imagem-beneficios:hover {
+   opacity: 1;
+   border: 1mm ridge #FF914D;
+   border-radius: 5px;
+}
+
+.conteudo-beneficios:nth-child(n) {
+   font-style: italic;
+}
+
+.lista-beneficios {
+    width: 250px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.item {
+    line-height: 1.5;
+}
+
+.localizacao {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.mapa {
+    width: 800px;
+    padding: 30px 0;
+    margin: 0 auto;
+}
+
+.nossasMotos {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.video {
+    cursor: pointer;
+    width: 800px;
+    padding: 30px 0;
+    margin: 0 auto;
+}
+
+footer {
+    text-align: center;
+    background: #FF914D;
+}
+
+/* CSS da página Motos */
+.motosDisponiveis {
+   margin-bottom: 130px;
+}
+
+.moto {
+    padding: 50px 10px;
+}
+
+.moto h3 {
+    text-align: center;
+}
+
+.titulo-moto {
+    margin: 40px 0 40px 120px;
+    font-weight: bold;
+}
+
+.subtitulo-descricao {
+    margin-bottom: 15px;
+}
+
+.moto img {
+    float: left;
+    height: 400px;
+    width: 50%;
+    margin-right: 60px;
+    margin-left: 30px;
+    border: 2px solid #ff8c00;
+    border-radius: 5px;
+}
+
+.moto img:hover {
+    transform: scale(1.1);
+}
+
+.botaoComprar {
+    margin: 30px 150px;
+    width: 260px;
+    padding: 15px 0;
+    background: #FF914D;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+    transition-delay: 0.1s;
+    border-radius: 5px;
+}
+
+.botaoComprar:hover {
+    transform: scale(1.1);
+    background: #ff8c00;
+}
+
+/* CSS da página Peças */
+.peca {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.pecas-categoria {
+    font-weight: bold;
+    margin: 40px 0 0 20px;
+    font-size: 26px;
+}
+
+.peca li {
+    display: inline-block;
+    width: 28%;
+    padding: 16px 8px;
+    border: 2px solid black;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin: 40px 20px;
+}
+
+.peca li:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.peca li:active {
+    border-color: #FF4500;
+}
+
+.peca img {
+    height: 300px;
+    width: 100%;
+}
+
+.peca ul li p {
+    text-align: center;
+}
+
+/* CSS da página de Produtos */
+
+.produto  {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.produto li {
+    display: inline-block;
+    width: 28%;
+    padding: 16px 14px;
+    border: 2px solid black;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin: 40px 20px;
+    opacity: 0.7;
+}
+
+.produto li:hover {
+    transform: scale(1.1);
+    border-color: #FF8C00;
+    opacity: 1;
+}
+
+.produto-categoria {
+    font-weight: bold;
+    margin: 40px 0 0 20px;
+    font-size: 26px;
+}
+
+.produto img {
+    height: 300px;
+    width: 100%;
+}
+
+/* CSS da página Contato */
+form {
+    padding: 30px;
+}
+
+form label, form legend {
+    display: block;
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.inputTexto {
+    display: block;
+    padding: 10px 25px;
+    width: 40%;
+    margin: 20px 0;
+    border-radius: 5px;
+    font-size: 18px;
+    opacity: 0.8;
+}
+
+.inputTexto:focus {
+    opacity: 1;
+}
+
+form img {
+    float: right;
+    height: 400px;
+    width: 38%;
+    margin: 20px 10px;
+    border-radius: 5px;
+    cursor: not-allowed;
+}
+
+select {
+    padding: 10px 25px;
+    font-size: 18px;
+    opacity: 0.8;
+}
+
+select:focus {
+    opacity: 1;
+}
+
+.botaoMensagem {
+    margin: 30px 50px;
+    padding: 15px 80px;
+    font-size: 18px;
+    background: #FF4500;
+    color: #FFFFFF;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 3s;
+}
+
+.botaoMensagem:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    background: #FFD700;
+}
+
+@media screen and (max-width: 767px) {
+   .caixa, .sobre, .imagem-sobre, .beneficios, .conteudo-beneficios, .localizacao, .mapa, .nossasMotos, .video {
+       width: auto;
+    } 
+
+    .caixa {
+        text-align: center;
+    }
+
+    .sobre {
+        text-align: center;
+        line-height: 1.3;
+        padding: 20px 10px;
+    }
+
+    nav {
+        position: static;
+    }
+
+    nav li {
+        display: block;
+        text-align: center;
+        padding: 10px 4px;
+    }
+
+    .banner {
+        height: 300px;
+        width: 100%;
+    }
+
+    .imagem-sobre {
+        margin: 20px 0;
+        height: 200px;
+        width: 90%;
+    }
+
+    .conteudo-beneficios {
+        text-align: center;
+        line-height: 1.3;
+    }
+
+    .imagem-beneficios {
+        margin: 20px 0;
+        width: 90%;
+    }
+
+    .localizacao {
+        text-align: center;
+        line-height: 1.3;
+        padding: 0 10px;
+    }
+
+    .mapa iframe {
+        height: 200px;
+    }
+
+    .nossasMotos {
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    .video iframe {
+        height: 200px;
+    }
+
+    /* Responsividade da página Motos */
+    .motosDisponiveis, .moto {
+        width: auto;
+        margin: 20px 0;
+    }
+
+    .moto {
+        display: block;
+        padding: 4px 10px;
+        width: auto;
+        text-align: center;
+    }
+
+    .moto img {
+        height: 232px;
+        width: 90%;
+        margin-bottom: 30px;
+    }
+
+    .moto p {
+        text-align: center;
+        line-height: 1.3;
+    }
+
+    .titulo-moto {
+        margin: 17px 30px;
+    }
+
+    .botaoComprar {
+        width: 70%;
+        margin: 20px 0;
+    }
+
+    /* CSS da página Peças */
+    .peca {
+        width: auto;
+    }
+
+    .pecas-categoria {
+        text-align: center;
+        margin: 30px 0;
+    }
+
+    .peca li {
+        display: block;
+        width: 87%;
+        margin: 30px auto;
+    }
+
+    /* Responsividade página Produtos */
+
+    .produto {
+        width: auto;
+    }
+
+    .produto-categoria {
+        text-align: center;
+        margin: 30px 0;
+    }
+
+    .produto li {
+        display: block;
+        width: 87%;
+        margin: 30px auto;
+    }
+
+    /* CSS da página de Contato */
+    .inputTexto {
+        display: block;
+        width: 70%;
+    }
+
+    form img {
+        display: none;
+    }
+
+    .botaoMensagem {
+        margin: 20px;
+        padding: 15px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1280px){
+    body {
+        font-size: 24px;
+    }
+    
+    .caixa, .sobre, .imagem-sobre, .beneficios, .conteudo-beneficios, .localizacao, .mapa, .nossasMotos, .video {
+        width: auto;
+     } 
+ 
+     .caixa {
+        text-align: center;
+     }
+
+     .banner {
+        height: 400px;
+     }
+ 
+     .sobre {
+        text-align: center;
+        line-height: 1.3;
+        padding: 10px 18px;
+     }
+ 
+     nav {
+         position: static;
+     }
+ 
+     nav li {
+         display: block;
+         text-align: center;
+         padding: 10px 4px;
+     }
+ 
+     .banner {
+         height: 450px;
+         width: 100%;
+     }
+ 
+     .imagem-sobre {
+         margin: 20px 0;
+         height: 300px;
+         width: 90%;
+     }
+
+     .conteudo-beneficios {
+        padding: 10px 45px;
+     }
+
+     .lista-beneficios {
+         width: 260px;
+     }
+
+     .imagem-beneficios {
+        width: 59%;
+     }
+ 
+     .localizacao {
+         text-align: center;
+         line-height: 1.3;
+     }
+ 
+     .mapa iframe {
+         height: 400px;
+     }
+ 
+     .nossasMotos {
+        text-align: center;
+        padding: 10px 18px;
+     }
+
+     /* Responsividade da página Motos */
+     .motosDisponiveis, .moto {
+        width: auto;
+        margin: 20px 0;
+    }
+
+    .moto {
+        display: block;
+        padding: 10px 18px;
+        width: auto;
+        text-align: center;
+    }
+
+    .moto img {
+        height: 400px;
+        width: 90%;
+        margin-bottom: 30px;
+    }
+
+    .moto p {
+        text-align: center;
+        line-height: 1.3;
+    }
+
+    .titulo-moto {
+        margin: 17px 30px;
+    }
+
+    .botaoComprar {
+        width: 40%;
+        margin: 20px 0;
+        font-size: 24px;
+    }
+
+     /* CSS da página Peças */
+    .peca {
+        width: auto;
+    }
+
+    .peca li {
+        display: inline-block;
+        width: 30%;
+        margin: 30px 10px;
+        padding: 28px;
+    }
+
+    /* Responsividade página Produtos */
+
+    .produto {
+        width: auto;
+    }
+
+    .produto-categoria {
+        margin: 30px 0;
+    }
+
+    .produto li {
+        display: inline-block;
+        width: 30%;
+        margin: 30px 10px;
+        padding: 22px;
+    }
+
+    /* CSS da página de Contato */
+
+    form img {
+        height: 300px;
+        width: 43%;
+    }
+}
