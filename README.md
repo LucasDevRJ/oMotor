@@ -5,6 +5,8 @@
 ## Sobre
 O site "O Motor" se consiste em um site de venda de motos, peças e produtos para as mesmas. Nele você encontrará textos, imagens, vídeos importados do You Tube, formulário. Tem também animações no CSS nos elementos do site e a responsividade. Site feito somente com HTML e CSS.
 
+![O Motor - Gif](imagens/oMotor.gif)
+
 ![Badge - Status](https://img.shields.io/badge/Status-Finalizado-brightgreen)
 
 ![Badge - Autoral](https://img.shields.io/badge/Autoral-Sim-brightgreen)
