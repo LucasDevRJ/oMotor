@@ -217,6 +217,7 @@ footer {
     border-radius: 5px;
     box-sizing: border-box;
     margin: 40px 20px;
+    text-align: center;
 }
 
 .peca li:hover {
@@ -237,6 +238,10 @@ footer {
     text-align: center;
 }
 
+.peca-descricao {
+    margin-top: 15px;
+}
+
 /* CSS da página de Produtos */
 
 .produto  {
@@ -253,6 +258,7 @@ footer {
     box-sizing: border-box;
     margin: 40px 20px;
     opacity: 0.7;
+    text-align: center;
 }
 
 .produto li:hover {
@@ -265,6 +271,10 @@ footer {
     font-weight: bold;
     margin: 40px 0 0 20px;
     font-size: 26px;
+}
+
+.produto-descricao {
+    margin-top: 15px;
 }
 
 .produto img {
